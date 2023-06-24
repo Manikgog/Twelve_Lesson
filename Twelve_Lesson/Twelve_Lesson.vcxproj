@@ -127,13 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="IP_address.cpp" />
-    <ClCompile Include="IP_mask.cpp" />
-    <ClCompile Include="Twelve_Lesson.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="IP_address.h" />
-    <ClInclude Include="IP_mask.h" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
