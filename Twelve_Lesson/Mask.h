@@ -1,4 +1,4 @@
-#ifndef _MASK_H_
+ï»¿#ifndef _MASK_H_
 #define _MASK_H_
 
 #include <string>
@@ -20,9 +20,9 @@ public:
 	Mask();
 	Mask(std::string mask);
 	Mask(int first_oktet, int second_oktet, int third_oktet, int fouth_oktet);
-	unsigned int AmountOfNodes();									// ìåòîä-÷ëåí, âîçâðàùàþùèé êîëè÷åñòâî óçëîâ â ñåòè, ñîîòâåòñòâóþùåé ìàñêå, äàííîãî îáúåêòà êëàññà
+	unsigned int AmountOfNodes();									// Ð¼ÐµÑ‚Ð¾Ð´-Ñ‡Ð»ÐµÐ½, Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÑŽÑ‰Ð¸Ð¹ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑƒÐ·Ð»Ð¾Ð² Ð² ÑÐµÑ‚Ð¸, ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ¹ Ð¼Ð°ÑÐºÐµ, Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° ÐºÐ»Ð°ÑÑÐ°
 	long long int IPToLongInt();
-	bool CorrespondenceBetweenAddressAndMask(Address addr);			// ìåòîä-÷ëåí, ïðîâåðÿþùèé ïðèíàäëåæèò ëè ïåðåäàâàåìûé â ìåòîä IP-àäðåñ äàííîé ìàñêå ñåòè
+	bool CorrespondenceBetweenAddressAndMask(Address addr);			// Ð¼ÐµÑ‚Ð¾Ð´-Ñ‡Ð»ÐµÐ½, Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑŽÑ‰Ð¸Ð¹ Ð¿Ñ€Ð¸Ð½Ð°Ð´Ð»ÐµÐ¶Ð¸Ñ‚ Ð»Ð¸ Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°ÐµÐ¼Ñ‹Ð¹ Ð² Ð¼ÐµÑ‚Ð¾Ð´ IP-Ð°Ð´Ñ€ÐµÑ Ð´Ð°Ð½Ð½Ð¾Ð¹ Ð¼Ð°ÑÐºÐµ ÑÐµÑ‚Ð¸
 	bool operator==(const Mask addr);
 
 	friend std::istream& operator>>(std::istream& in, Mask& mask);

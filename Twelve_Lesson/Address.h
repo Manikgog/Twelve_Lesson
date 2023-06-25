@@ -1,4 +1,4 @@
-#ifndef _ADDRESS_H_
+п»ї#ifndef _ADDRESS_H_
 #define _ADDRESS_H_
 
 #include <string>
@@ -13,7 +13,7 @@ private:
 	unsigned char _third_oktet;
 	unsigned char _fouth_oktet;
 	Address StringToAddress(std::string str);
-	bool IsValidIP(int first_oktet, int second_oktet, int third_oktet, int fouth_oktet); // метод-член класса проверяет валидность IP-адреса
+	bool IsValidIP(int first_oktet, int second_oktet, int third_oktet, int fouth_oktet); // РјРµС‚РѕРґ-С‡Р»РµРЅ РєР»Р°СЃСЃР° РїСЂРѕРІРµСЂСЏРµС‚ РІР°Р»РёРґРЅРѕСЃС‚СЊ IP-Р°РґСЂРµСЃР°
 	Address(long long int addr);
 	int* StringToArr(std::string str);
 public:
@@ -22,7 +22,7 @@ public:
 	Address(int first_oktet, int second_oktet, int third_oktet, int fouth_oktet);
 	bool operator==(const Address addr);
 	bool operator<(const Address& addr);
-	Address ConvertToNetworkAddress(Mask& mask);										// метод-член класса преобразовывает IP-адрес в адрес сети, используя переданную маску
+	Address ConvertToNetworkAddress(Mask& mask);										// РјРµС‚РѕРґ-С‡Р»РµРЅ РєР»Р°СЃСЃР° РїСЂРµРѕР±СЂР°Р·РѕРІС‹РІР°РµС‚ IP-Р°РґСЂРµСЃ РІ Р°РґСЂРµСЃ СЃРµС‚Рё, РёСЃРїРѕР»СЊР·СѓСЏ РїРµСЂРµРґР°РЅРЅСѓСЋ РјР°СЃРєСѓ
 	long long int IPToLongInt();
 
 	friend std::istream& operator>>(std::istream& in, Address& addr);

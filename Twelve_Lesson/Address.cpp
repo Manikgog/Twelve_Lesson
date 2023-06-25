@@ -1,11 +1,11 @@
-#include "Address.h"
+ï»¿#include "Address.h"
 #include "Mask.h"
 
 Address Address::StringToAddress(std::string str)
 {
 	int* arr = StringToArr(str);
 	if (!IsValidIP(arr[0], arr[1], arr[2], arr[3]))
-		std::cout << "Àäðåñ íåâàëèäíûé!\n";
+		std::cout << "ÐÐ´Ñ€ÐµÑ Ð½ÐµÐ²Ð°Ð»Ð¸Ð´Ð½Ñ‹Ð¹!\n";
 	Address tmp_mask(arr[0], arr[1], arr[2], arr[3]);
 	return tmp_mask;
 }
@@ -33,7 +33,7 @@ Address::Address(long long int addr)
 
 int* Address::StringToArr(std::string str)
 {
-	int arr[4]{};						// öèôðà 4 - êîëè÷åñòâî îêòåòîâ â ìàñêå èëè àäðåñå
+	int arr[4]{};						// Ñ†Ð¸Ñ„Ñ€Ð° 4 - ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¾ÐºÑ‚ÐµÑ‚Ð¾Ð² Ð² Ð¼Ð°ÑÐºÐµ Ð¸Ð»Ð¸ Ð°Ð´Ñ€ÐµÑÐµ
 	std::string s_tmp;
 	char c;
 
