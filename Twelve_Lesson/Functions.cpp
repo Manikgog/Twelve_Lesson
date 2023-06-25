@@ -2,6 +2,8 @@
 #include "Address.h"
 #include "Mask.h"
 
+
+
 std::istream& operator>>(std::istream& in, Mask& mask)
 {
 	std::string str;
@@ -12,7 +14,6 @@ std::istream& operator>>(std::istream& in, Mask& mask)
 	mask = tmp_addr;
 	return in;
 }
-
 
 std::istream& operator>>(std::istream& in, Address& addr)
 {
